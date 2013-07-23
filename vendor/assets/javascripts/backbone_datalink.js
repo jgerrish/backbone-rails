@@ -11,7 +11,7 @@
             var newVal = model.get(name);
 
             if(el.is(":checkbox")) {
-              el.prop(checked: !!newVal);
+              el.prop({checked: !!newVal});
             } else {
               return el.val(newVal);
             }
